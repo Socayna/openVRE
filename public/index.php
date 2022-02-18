@@ -1,6 +1,6 @@
 <?php
 
-#require "/var/www/html/openVRE/config/bootstrap.php";
+require "/var/www/html/openVRE/config/bootstrap.php";
 
 ?>
 
