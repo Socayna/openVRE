@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__."//config/bootstrap.php";
+require "/var/www/html/openVRE/config/bootstrap.php";
 
 ?>
 
@@ -31,7 +31,7 @@ if (isset($_REQUEST['id']) && $_REQUEST['id']){
        $tool = getTool_fromId($_REQUEST['from'],1);
        if (!isset($tool['_id'])){
           $_SESSION['userData']['Warning'][]="Cannot load '".$_REQUEST['from']."'. Tool not found";
-          redirect("../home/redirect.php");
+          redirect("/var/www/html/openVRE/public/home/redirect.php");
        }
        if (isset($_REQUEST['sd'])){
           $sd = $_REQUEST['sd'];
@@ -49,7 +49,7 @@ if (isset($_REQUEST['id']) && $_REQUEST['id']){
 
     // Redirect to WS with a welcome modal
     if (isset($_REQUEST['from']) && $_REQUEST['from']){
-        redirect("../workspace/?from=".$_REQUEST['from']);
+        redirect("/var/www/html/openVRE/public/workspace/?from=".$_REQUEST['from']);
     }
 }
-redirect($GLOBALS['BASEURL']."home/redirect.php");
+redirect($GLOBALS['BASEURL']."/var/www/html/openVRE/public/home/redirect.php");
