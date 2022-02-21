@@ -4,8 +4,7 @@
         "justinrainbow/json-schema": "^5.2",
         "league/oauth2-google": "^2.0",
         "mongodb/mongodb": "^1.5",
-        "ext-mongodb": "^1.6",
-	"php": "^7.0"
+        "ext-mongodb": "^1.6"
     },
     "autoload": {
       "psr-4": {
